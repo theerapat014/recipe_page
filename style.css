@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--Eggshell);
+    color: var(--Wenge_Brown);
+    min-height: 100vh;
+    font-family: "Outfit", sans-serif;
+    line-height: 1.4;
+    display: grid;
+    place-content: center;
+    
+
+}
+:root{
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark_Raspberry: hsl(332, 51%, 32%);
+
+    --White: hsl(0, 0%, 100%);
+    --Rose_White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light_Grey: hsl(30, 18%, 87%);
+    --Wenge_Brown: hsl(30, 10%, 34%);
+    --Dark_Charcoal: hsl(24, 5%, 18%);
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+h1,h2{
+    font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+h1{
+    color: var(--Dark_Charcoal);
+    font-size: 2.8rem;
+}
+h2{
+    color: var(--Nutmeg);
+    margin-bottom: 1rem;
+}
+.recipe-step{
+    margin: 1rem 0;
+}
+.nutrition-step{
+    margin-top: 1rem;
+}
+ul li{
+    margin-bottom: .5rem;
+}
+ul li::marker{
+    color: var(--Nutmeg);
+    font-weight: bold;
+}
+ul li span{
+    color: var(--Wenge_Brown);
+    margin-left: 1rem;
+    font-weight: 700;
+}
+hr{
+    margin: 1.5rem 0;
+    border: 1px solid var(--Light_Grey);
+}
+.container{
+    max-width: 800px;
+    background-color: var(--White);
+    margin: 2rem;
+    border-radius: 1rem;
+}
+.container .recipe-img{
+    padding: 2rem;
+    border-radius: 1rem;
+    overflow:hidden ;
+}
+.recipe-informarion h1{
+    margin: 0;
+    
+}
+.container .recipe-img img{
+    border-radius: 1rem;
+}
+.recipe-informarion{
+    padding: 0rem 2rem 2rem 2rem;
+}
+.description{
+    margin: 1.5rem 0;
+}
+.recipe-prep-time{
+    background-color: var(--Rose_White);
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+.recipe-prep-time h3{
+    color: var(--Dark_Raspberry);
+    margin-bottom: .75rem;
+}
+.recipe-prep-time ul li ::marker{
+    color: var(--Dark_Raspberry);
+}
+.ingredients li{
+    margin-bottom: .5rem;
+}
+.ingredients li span{
+    font-weight: initial;
+}
+.instructions .item{
+    padding-left: .5rem;
+    margin-bottom: .5rem;
+    display: flex;
+}
+.instructions .item .num{
+    color: var(--Nutmeg);
+    margin-right: 1rem;
+    font-weight: 700;
+}
+.instructions p{
+    margin: 0;
+}
+.instructions .item p span{
+    font-weight: 700;
+}
+.nutrition-step p{
+    margin: 0;
+}
+.nutrition-step .values{
+    margin-bottom: 1rem;
+
+}
+.nutrition-step .item{
+    padding: .75rem .2rem;
+    display: flex;
+    border-bottom: 1px solid var(--Light_Grey);
+}
+.nutrition-step .item:last-child{
+    border-bottom: 0;
+}
+.nutrition-step .item p:nth-child(2){
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+.nutrition-step .item >*{
+    width: 100px;
+    margin-right: auto;
+}
+@media (max-width: 540px) {
+    h1{
+        margin-top: 2rem;
+    }
+    .container{
+        margin: 0;
+    }
+    .container .recipe-img{
+        padding: 0;
+        border-radius: 0;
+    }
+    .container .recipe-img img{
+        border-radius: 0;
+    }
+}
